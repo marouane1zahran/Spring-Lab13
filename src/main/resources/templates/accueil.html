@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil - SSO App</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f7f6; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .container { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
+        h1 { color: #333; }
+        .btn-login { display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #4285F4; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .btn-login:hover { background-color: #357ae8; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Bienvenue sur l'application Oauth par marouane</h1>
+    <p>Veuillez vous authentifier pour accéder à votre espace sécurisé.</p>
+    <a href="/oauth2/authorization/google" class="btn-login">Se connecter avec Google</a>
+</div>
+</body>
+</html>

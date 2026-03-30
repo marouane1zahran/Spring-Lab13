@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Espace - SSO App</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f7f6; padding: 50px; }
+        .profile-card { background: white; max-width: 400px; margin: 0 auto; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
+        .profile-pic { border-radius: 50%; width: 100px; height: 100px; object-fit: cover; margin-bottom: 20px; border: 3px solid #4285F4; }
+        .info { margin: 10px 0; color: #555; }
+        .btn-logout { display: inline-block; margin-top: 25px; padding: 10px 20px; background-color: #e74c3c; color: white; text-decoration: none; border-radius: 5px; }
+        .btn-logout:hover { background-color: #c0392b; }
+    </style>
+</head>
+<body>
+<div class="profile-card">
+    <h2>Mon Profil Utilisateur</h2>
+
+
+    <div class="info"><strong>Nom complet :</strong> <span th:text="${userName}"></span></div>
+    <div class="info"><strong>Adresse e-mail :</strong> <span th:text="${userEmail}"></span></div>
+
+    <a href="/logout" class="btn-logout">Se déconnecter</a>
+</div>
+</body>
+</html>
